@@ -1,0 +1,267 @@
+*{
+  margin: 0;
+  padding: 0; 
+  box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'moto';
+    src: url('../fuentes/moto-verse.otf');
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#272727;
+}
+/* Estilos del header */
+header.cabecera {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background-image: url('../imagenes/Presentacion\ Propuesta\ de\ Proyecto\ de\ Startup\ Empresarial\ Profesional\ negro\ y\ celeste.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1 {
+    color: rgb(255, 255, 255);
+    font-size: 55px;
+    font-family: 'moto';
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    text-shadow: 1px 2px 15px #848181;
+}
+
+/* css de navegador */
+
+.navegador {
+    background-color: #07ad89;
+    padding: 10px;
+  }
+  
+  .navegador ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navegador li {
+    margin-right: 100px;
+  }
+  
+  .navegador a {
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+  }
+  
+  nav {
+    grid-column: 1 / -1;
+    text-align: center;
+  }
+
+  .navegador ul .nav-item:hover{
+    background-color: rgb(22, 22, 22);
+    border: 2.5px solid #1f0692 ;
+    padding: 10px;
+  }
+
+  /*check menú*/
+  #checkbox-menu, label.menu{
+    display: none;
+    
+  }
+  label.menu{
+    font-size: 30px;
+    color: #000000;
+    cursor: pointer;
+  }
+
+ 
+  /*estilos del cuerpo del index*/
+
+  .primer-parte{
+    display: flex;
+    padding: 20px;
+    color: #07ad89;
+    background-color:#272727;
+  }
+  .primer-parte .contenido1 .contenido2{
+    max-width: 100px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    border-right: 1.5px solid #07ad89;
+    overflow: auto;
+  }
+  h3, h5{
+    color: aliceblue;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  p{
+    color: rgb(84, 84, 212);
+    text-align:center;
+  }
+
+  h2{
+    font-size: 50px;
+    margin-bottom: 15px;
+  }
+
+  .cuadro {
+    background-image: url(../imagenes/cuerpo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 20px;
+    color: #07ad89;
+    text-align: center;
+  }
+  
+  .cuadro label {
+    display: block;
+    margin-bottom: 10px;
+
+  }
+  
+  .cuadro textarea {
+    width: 30%;
+    height: 150px;
+    
+  }
+  
+  button[type="submit"],
+  button[type="reset"] {
+    background-color: #07ad89;
+    border: none;
+    color: #000000;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 10px;
+    
+  }
+  
+
+  /*css de contacto*/
+  .infor-formulario {
+    max-width: 500px;
+    margin: auto;
+    padding: 15px;
+  }
+  
+  .formulario {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    color:#07ad89
+  }
+  
+  .formulario label {
+    width: 50px;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .formulario input[type="text"],
+  .formulario input[type="email"],
+  .formulario textarea {
+    width: 70%;
+    padding: 10px;
+    border: 2.5px solid #07ad89;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .formulario textarea {
+    height: 150px;
+    min-height: 150px;
+    max-height: 300px;
+    resize: vertical;
+  }
+  
+  .formulario button {
+    padding: 10px 20px;
+    background-color: #07ad89;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  /*pseudoclases*/
+  .formulario input:focus, .formulario textarea:focus{
+    background-color: #ffffff;
+    border-radius: 10px;
+  }
+  .formulario input:not(:focus), .formulario textarea:not(:focus){
+    background-color: #848181;
+  }
+
+  /*css planes*/
+  .card{
+    background-color: #b6b5b5;
+  }
+  .text-body-secondary{
+    font-size: 30px;
+  }
+  /*css galeria*/
+  .galeria .img-grupo1{
+   width: 400px;
+   height: 400px;
+  }
+  h2{
+  text-align: center;
+  margin: 10px;
+  padding: 20px;
+  color: #07ad89;
+  }
+
+  /* css de somos*/
+  .titulos{
+    background-color: rgb(71, 71, 71);
+  }
+  .row{
+    font-size: 30px;
+    color:#07ad89
+  }
+
+  /* Footer */
+  footer {
+    background-color: #272727;
+    padding: 20px;
+    text-align: center;
+    color:#07ad89;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  footer p {
+    margin: 0;
+  } 
+  
+  .redes a{
+    font-size: 25px;
+  }
+  .redes a:hover{
+    text-transform:lowercase;
+  }
+  
+  
+  @media screen and (max-width: 600px){
+    .navegador ul{
+      display: none;
+      flex-direction:column;
+      position:relative;
+      background-color: #07ad89;
+    }
+    label.menu{
+      display: block;
+     
+    }
+    #checkbox-menu:checked ~ ul {
+      display: block;
+    }
+  }
+ 
