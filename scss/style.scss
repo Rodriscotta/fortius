@@ -1,0 +1,151 @@
+@import "partials/reset";
+@import "partials/variables";
+@import "partials/condicionales";
+
+
+  @font-face {
+    font-family: 'moto';
+    src: url('../fuentes/moto-verse.otf');
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#272727;
+}
+/* Estilos del header */
+header.cabecera {
+    position: relative;
+    width: $anchoMax;
+    height: 450px;
+    background-image: url('../imagenes/Presentacion\ Propuesta\ de\ Proyecto\ de\ Startup\ Empresarial\ Profesional\ negro\ y\ celeste.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h1 {
+        color: rgb(255, 255, 255);
+        font-size: 55px;
+        font-family: 'moto';
+        position: absolute;
+        top: 100px;
+        left: 200px;
+        text-shadow: 1px 2px 15px #848181;
+        transition: transform 1s;
+          }
+          h1:hover{
+            transform: scale(1.1, 2)
+            
+          }
+}
+/* css de navegador */
+  .navegador {
+        background-color: $colorVerde;
+        padding: 10px;
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(83,45,126,1) 42%, rgba(0,212,255,1) 100%);
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 10;
+            display: flex;
+            justify-content: center;
+            
+            .nav-item:hover{
+                background-color: rgb(22, 22, 22);
+                border: 2.5px solid #1f0692 ;
+                padding: 10px;
+                transition: all 0.5s ease-in-out;
+            }
+            li {
+                margin-right: 100px;
+    
+                a {
+                    color: $colornegro;
+                    font-family: Arial, Helvetica, sans-serif;
+                    text-decoration: none;
+                  }
+              }
+          }
+      }
+      nav {
+        grid-column: 1 / -1;
+        text-align: center;
+      }
+       /*check menú*/
+    #checkbox-menu, label.menu{
+        display: none;
+        }
+        label.menu{
+        font-size: 30px;
+        color: $colornegro;
+        cursor: pointer;
+        }    
+/*estilos del cuerpo del index*/
+
+.primer-parte{
+    display: flex;
+    padding: 20px;
+    color:$colorVerde;
+    background-color:#272727;
+    animation: cambio_de_color 1.3s infinite;
+
+    .contenido1 .contenido2{
+        max-width: $anchoMax;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+        border-right: 1.5px solid $colorVerde;
+        overflow: auto;
+      }
+    h2{
+        font-size: 50px;
+        margin-bottom: 15px;
+        
+        
+        h3, h5{
+            color: aliceblue;
+            text-transform: uppercase;
+            text-align: center;
+          }
+          p{
+            color: rgb(84, 84, 212);
+            text-align:center;
+          }
+      } 
+      @keyframes cambio_de_color {
+        from{
+          background-color:#494848;
+        }
+        to{
+          background-color:#272727;
+        }
+        
+      } 
+  }
+  .cuadro {
+    background-image: url(../imagenes/cuerpo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 20px;
+    color: $colorVerde;
+    text-align: center;
+
+    label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      textarea {
+        width: 30%;
+        height: 150px;
+      } 
+      button[type="submit"],
+      button[type="reset"] {
+        background-color: $colorVerde;
+        border: none;
+        color: $colornegro;
+        padding: 10px 20px;
+        cursor: pointer;
+        margin-right: 10px;
+      }   
+  }

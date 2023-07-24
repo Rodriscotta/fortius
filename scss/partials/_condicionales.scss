@@ -1,0 +1,7 @@
+$fechasEspeciales:"diadelamigo";
+
+@if($fechasEspeciales == "diadelamigo"){
+    .cabecera {
+        background-image: url("../imagenes/amigos.jpg");
+    }
+}
