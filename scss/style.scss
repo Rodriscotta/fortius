@@ -16,7 +16,7 @@ header.cabecera {
     position: relative;
     width: $anchoMax;
     height: 450px;
-    background-image: url('../imagenes/Presentacion\ Propuesta\ de\ Proyecto\ de\ Startup\ Empresarial\ Profesional\ negro\ y\ celeste.jpg');
+    background-image: url('../imagenes/header.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -81,7 +81,10 @@ header.cabecera {
         cursor: pointer;
         }    
 /*estilos del cuerpo del index*/
-
+.cuerpo{
+  background: rgb(2,0,36);
+background: linear-gradient(4deg, rgba(2,0,36,1) 0%, rgba(46,46,46,1) 41%, rgba(0,212,255,1) 100%);
+}
 .primer-parte{
     display: flex;
     padding: 20px;
@@ -124,11 +127,12 @@ header.cabecera {
       } 
   }
   .cuadro {
-    background-image: url(../imagenes/cuerpo.jpg);
+    background: rgb(2,0,36);
+    background: linear-gradient(4deg, rgba(2,0,36,1) 0%, rgba(46,46,46,1) 41%, rgba(0,212,255,1) 100%);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 20px;
-    color: $colorVerde;
+    color:#272727;
     text-align: center;
 
     label {
@@ -148,4 +152,118 @@ header.cabecera {
         cursor: pointer;
         margin-right: 10px;
       }   
+  }
+  /*contacto*/
+.infor-formulario {
+  max-width: 500px;
+  margin: auto;
+  padding: 15px;
+  background-color: #5918ad;
+  border-radius: 10px;
+  .formulario {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    color:#07ad89;
+     
+    label {
+      width: 50px;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    input[type="text"]{
+      width: 70%;
+    padding: 10px;
+    border: 2.5px solid #07ad89;
+    border-radius: 4px;
+    font-size: 16px;
+    }
+    input[type="email"]{
+      width: 70%;
+      padding: 10px;
+      border: 2.5px solid #07ad89;
+      border-radius: 4px;
+      font-size: 16px;
+      }
+    }
+    textarea{
+      width: 70%;
+      padding: 10px;
+      border: 2.5px solid #07ad89;
+      border-radius: 4px;
+      font-size: 16px;
+      height: 150px;
+    min-height: 150px;
+    max-height: 300px;
+    resize: vertical;
+    button {
+      padding: 10px 20px;
+      background-color: #07ad89;
+      color: rgb(0, 0, 0);
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  }
+  /*pseudoclases*/
+  .formulario input:focus, .formulario textarea:focus{
+    background-color: #ffffff;
+    border-radius: 10px;
+  }
+  .formulario input:not(:focus), .formulario textarea:not(:focus){
+    background-color: #848181;
+  }
+}
+
+/*css planes*/
+.card{
+  background-color: #b6b5b5;
+}
+.text-body-secondary{
+  font-size: 30px;
+}
+
+ /*css galeria*/
+ .galeria{
+  h2{
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    color: #07ad89;
+  } 
+  .img-grupo1{
+    width: 400px;
+    height: 400px;
+   }
+
+}
+
+ /* css de somos*/
+ .titulos{
+   background-color: rgb(71, 71, 71);
+ }
+ .row{
+   font-size: 30px;
+   color:#000000
+ }
+
+  /* Footer */
+  footer {
+    background-color: #272727;
+    padding: 20px;
+    text-align: center;
+    color:#07ad89;
+    font-family: Arial, Helvetica, sans-serif;
+    p {
+      margin: 0;
+    } 
+  } 
+  
+  .redes a{
+    font-size: 25px;
+  }
+  .redes a:hover{
+    text-transform:lowercase;
   }
