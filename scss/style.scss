@@ -60,7 +60,7 @@ header.cabecera {
                 margin-right: 100px;
     
                 a {
-                    color: $colornegro;
+                    color:#ffffff;
                     font-family: Arial, Helvetica, sans-serif;
                     text-decoration: none;
                   }
@@ -100,6 +100,10 @@ background: linear-gradient(4deg, rgba(2,0,36,1) 0%, rgba(46,46,46,1) 41%, rgba(
         padding: 0 20px;
         border-right: 1.5px solid $colorVerde;
         overflow: auto;
+      }
+      .imagen{
+        width: 400px;
+        height: 400px
       }
     h2{
         font-size: 50px;
@@ -227,6 +231,7 @@ background: linear-gradient(4deg, rgba(2,0,36,1) 0%, rgba(46,46,46,1) 41%, rgba(
 
  /*css galeria*/
  .galeria{
+  align-items: center;
   h2{
     text-align: center;
     margin: 10px;
@@ -234,6 +239,7 @@ background: linear-gradient(4deg, rgba(2,0,36,1) 0%, rgba(46,46,46,1) 41%, rgba(
     color: #07ad89;
   } 
   .img-grupo1{
+    align-items: center;
     width: 400px;
     height: 400px;
    }
@@ -267,3 +273,6 @@ background: linear-gradient(4deg, rgba(2,0,36,1) 0%, rgba(46,46,46,1) 41%, rgba(
   .redes a:hover{
     text-transform:lowercase;
   }
+
+ 
+@import "partials/media";

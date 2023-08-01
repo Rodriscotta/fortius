@@ -66,7 +66,7 @@ header.cabecera h1:hover {
   margin-right: 100px;
 }
 .navegador ul li a {
-  color: #000000;
+  color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
 }
@@ -108,6 +108,10 @@ label.menu {
   padding: 0 20px;
   border-right: 1.5px solid #07ad89;
   overflow: auto;
+}
+.primer-parte .imagen {
+  width: 400px;
+  height: 400px;
 }
 .primer-parte h2 {
   font-size: 50px;
@@ -231,6 +235,9 @@ label.menu {
 }
 
 /*css galeria*/
+.galeria {
+  align-items: center;
+}
 .galeria h2 {
   text-align: center;
   margin: 10px;
@@ -238,6 +245,7 @@ label.menu {
   color: #07ad89;
 }
 .galeria .img-grupo1 {
+  align-items: center;
   width: 400px;
   height: 400px;
 }
@@ -270,6 +278,72 @@ footer p {
 
 .redes a:hover {
   text-transform: lowercase;
+}
+
+/* Estilos generales */
+/* Media query para pantallas pequeñas */
+@media screen and (max-width: 767px) {
+  header.cabecera {
+    height: 300px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+}
+/* Media query para pantallas medianas */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  header.cabecera {
+    height: 400px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+}
+/* Media query para pantallas grandes */
+@media screen and (min-width: 1200px) {
+  header.cabecera {
+    height: 600px;
+  }
+  h1 {
+    font-size: 55px;
+  }
+}
+@media screen and (max-width: 767px) {
+  header.cabecera h1 {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  header.cabecera h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .galeria .img-grupo1 {
+    width: 250px;
+    height: 250px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .galeria .img-grupo1 {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .primer-parte h2 {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .primer-parte h2 {
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .primer-parte h2 {
+    font-size: 50px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

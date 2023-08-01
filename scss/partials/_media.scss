@@ -1,0 +1,76 @@
+/* Estilos generales */
+
+/* Media query para pantallas pequeñas */
+@media screen and (max-width: 767px) {
+    header.cabecera {
+      height: 300px; 
+    }
+    h1 {
+      font-size: 30px; 
+    }
+  }
+  
+  /* Media query para pantallas medianas */
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    header.cabecera {
+      height: 400px; 
+    }
+    h1 {
+      font-size: 40px; 
+    }
+    
+  }
+  
+  /* Media query para pantallas grandes */
+  @media screen and (min-width: 1200px) {
+    header.cabecera {
+      height: 600px;
+    }
+    h1 {
+      font-size: 55px; 
+    }
+    
+  }
+  
+  @media screen and (max-width: 767px) {
+    header.cabecera h1 {
+      font-size: 30px; 
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    header.cabecera h1 {
+      font-size: 40px; 
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .galeria .img-grupo1 {
+      width: 250px; 
+      height: 250px; 
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    .galeria .img-grupo1 {
+      width: 300px; 
+      height: 300px; 
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .primer-parte h2 {
+      font-size: 30px; 
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    .primer-parte h2 {
+      font-size: 40px; 
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .primer-parte h2 {
+      font-size: 50px; 
+    }
+  }
+      
